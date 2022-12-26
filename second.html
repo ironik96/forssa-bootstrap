@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: hsl(0, 0%, 5%);
+      }
+      p.brand {
+        color: white;
+        font-weight: 600;
+        font-size: 48px;
+      }
+      .nav-link {
+        color: white;
+      }
+      .logo {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 6px solid white;
+        position: relative;
+      }
+      .navbar-brand {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      ul.navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      div.spacer {
+        flex-grow: 1;
+      }
+      .logo-v-line {
+        position: absolute;
+        background-color: hsl(0, 0%, 5%);
+        width: 8px;
+        top: -6px;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .logo-h-line {
+        position: absolute;
+        background-color: hsl(0, 0%, 5%);
+        height: 8px;
+        right: -6px;
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      div.nav-item-sep {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      hr.nav-bar-divider {
+        width: 100%;
+        color: hsl(0, 0%, 35%);
+      }
+      div.title-underline {
+        height: 10px;
+        width: 280px;
+        background-color: white;
+      }
+      .p-title {
+        font-size: 108px;
+        color: white;
+        font-weight: 500;
+      }
+      blockquote.blockquote {
+        color: white;
+        font-size: 48px;
+        margin: 30px 0;
+      }
+      .btn-danger {
+        background-color: hsl(6, 100%, 76%);
+        padding: 20px 50px;
+        color: black;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg dflex">
+        <a href="#" class="navbar-brand"
+          ><p class="brand">Focus</p>
+          <div class="logo">
+            <div class="logo-v-line"></div>
+            <div class="logo-h-line"></div></div
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="spacer"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">PAGES</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item-sep"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COMPONENTS</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item-sep"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">STYLES</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-item-sep"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">START</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <hr class="nav-bar-divider" />
+    <div class="container">
+      <p class="p-title">Create an awesome design portfolio</p>
+      <div class="title-underline"></div>
+      <blockquote class="blockquote">
+        Focus is a clean and elegant Bootstrap theme for designers, architects,
+        photographers and creative people.
+      </blockquote>
+      <button class="btn btn-danger">PURCHASE - $39</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .con-nav {
+        background-color: hsl(0, 0%, 5%);
+      }
+      .con-body {
+        background-color: white;
+      }
+      p.brand {
+        color: white;
+        font-weight: 600;
+        font-size: 48px;
+      }
+      .nav-link {
+        color: white;
+      }
+      .logo {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 6px solid white;
+        position: relative;
+      }
+      .navbar-brand {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      ul.navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      div.spacer {
+        flex-grow: 1;
+      }
+
+      .logo-v-line {
+        position: absolute;
+        background-color: hsl(0, 0%, 5%);
+        width: 8px;
+        top: -6px;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .logo-h-line {
+        position: absolute;
+        background-color: hsl(0, 0%, 5%);
+        height: 8px;
+        right: -6px;
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      div.nav-item-sep {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      img.avatar {
+        width: 100px;
+      }
+      div.my-content-body {
+        width: 100%;
+        height: calc(100vh - 114px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      div.people-title {
+        height: 20%;
+        display: flex;
+        align-items: center;
+      }
+      div.people {
+        height: 80%;
+        width: 100%;
+        padding-top: 5%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        text-align: center;
+      }
+      .person > img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .person-name {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 0;
+      }
+      .person-description {
+        font-weight: 500;
+        font-size: 14px;
+        color: hsl(0, 0%, 43%);
+        text-transform: uppercase;
+        /* letter-spacing: 0.1px; */
+      }
+      .person-quote {
+        font-weight: 500;
+        font-size: 18px;
+        color: hsl(0, 0%, 43%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg dflex">
+          <a href="#" class="navbar-brand"
+            ><p class="brand">Focus</p>
+            <div class="logo">
+              <div class="logo-v-line"></div>
+              <div class="logo-h-line"></div></div
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="spacer"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">PAGES</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item-sep"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COMPONENTS</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item-sep"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">STYLES</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item-sep"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">START</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="my-content-body">
+        <div class="people-title"><h1>What people are saying...</h1></div>
+        <div class="people">
+          <div class="person">
+            <img src="images/avatar-1.png" alt="personal avatar" />
+            <p class="bold person-name">Tim Schoch</p>
+            <p class="bold person-description">designer</p>
+            <p class="person-quote">
+              "Focus theme is great. It really saves me time and effort. Thank
+              you so much for your help"
+            </p>
+          </div>
+          <div class="person">
+            <img src="images/avatar-2.png" alt="personal avatar" />
+            <p class="bold person-name">Olive Mathews</p>
+            <p class="bold person-description">PHOTOGRAPHER</p>
+            <p class="person-quote">
+              "Focus is great. I will refer everyone I know. This theme is worth
+              much more than I paid. I'm loving it."
+            </p>
+          </div>
+
+          <div class="person">
+            <img src="images/avatar-3.png" alt="personal avatar" />
+            <p class="bold person-name">Malan Alankara</p>
+            <p class="bold person-description">ARCHITECT</p>
+            <p class="person-quote">
+              "Not able to tell you how happy I am with Focus. It's exactly what
+              I've been looking for."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
